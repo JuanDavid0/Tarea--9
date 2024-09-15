@@ -14,7 +14,6 @@ document.getElementById('fetchData').addEventListener('click', async () => {
       document.getElementById('one-piece-status').textContent = `Status: ${onePiece.status}`;
       document.getElementById('one-piece-age').textContent = `Age: ${onePiece.age}`;
   
-      // Actualizar la información de Rick and Morty
       const rickAndMorty = data.rickAndMorty;
       document.getElementById('rick-and-morty-image').src = rickAndMorty.image;
       document.getElementById('rick-and-morty-name').textContent = `Name: ${rickAndMorty.name}`;

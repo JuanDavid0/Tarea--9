@@ -9,7 +9,6 @@ app.use(cors());
 
 app.get('/apisMortyOnePiece', async (req, res) => {
   try {
-    // Importación dinámica de node-fetch
     const fetch = (await import('node-fetch')).default;
 
     // Petición a la API de One Piece
@@ -42,13 +41,12 @@ app.get('/apisMortyOnePiece', async (req, res) => {
 
     const rickAndMortyData = await rickAndMortyResponse.json();
 
-    // Combinación de las respuestas
+    // Manejo de respuesta de las dos APIs
     const combinedData = {
       onePiece: onePieceData,
       rickAndMorty: rickAndMortyData
     };
 
-    // Enviar la respuesta combinada al frontend
     res.json(combinedData);
 
   } catch (error) {
