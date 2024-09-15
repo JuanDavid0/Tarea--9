@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  .container {
+    display: none;
+    justify-content: space-around;
+  }
+  .api-section {
+    width: 45%;
+  }
+  .api-section img {
+    max-width: 100%;
+    height: auto;
+  }
+  .api-section h2 {
+    margin-top: 0;
+  }
+  .api-section p {
+    margin: 5px 0;
+  }
+  
